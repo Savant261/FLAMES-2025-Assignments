@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 40px; /* Adds space around the table */
+    background-image: url('timetableimg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.timetable-container {
+    background: #ffe3a9;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 850px;
+    width: 100%;
+}
+
+h1 {
+    color: #0b1d51;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: rgba(255, 255, 255, 0.6); /* translucent white */
+    border: 2px solid #0b1d51;
+    border-radius: 12px;
+    overflow: hidden;
+    backdrop-filter: blur(100%); /* subtle blur effect */
+    -webkit-backdrop-filter: blur(100%); /* for Safari */
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #0b1d51;
+    color: #0b1d51;
+    font-size: 16px;
+    font-weight: 600;
+    vertical-align: middle;
+    background-color: rgba(255, 255, 255, 0.3); /* light translucent background for cells */
+}
+
+th {
+    background: rgba(114, 92, 173, 0.85);
+    color: #ffe3a9;
+    font-weight: 700;
+}
+
+td[rowspan="2"], td[colspan="5"] {
+    background: #a2aadb;
+    color: #0b1d51;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+td:hover {
+    background-color: #c5e8f7;
+    cursor: default;
+}
+
+.info {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #0b1d51;
+    font-style: italic;
+    text-align: right;
+}
